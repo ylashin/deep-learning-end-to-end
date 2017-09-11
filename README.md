@@ -14,17 +14,19 @@ You should be familiar with Microsoft .NET & C# but hopefully the steps will be 
 
 We will need Visual Studio and you can use the free Community Edition. It will be needed to publish the final web application to Azure or maybe test it locally if you do not want to publish it. 
 
+A DockerHub account is needed as well because we will deploy a new image to DockerHub.
+
 ## Overview
 
 The main steps of this tutorial are:
-1. Setup Azure VM using Data Science template and a GPU enabled HW
-1. Follow up a group of Jupyter notebooks to come up with final model
-1. Create a docker container to serve that model using TensorFlow Serving
-1. Create a Kubernetes cluster to run that container in a high availability environment
+1. [Setup Azure VM using Data Science template and a GPU enabled HW](1.SetupAzureVM.md)
+1. [Progressively run Jupyter notebooks to come up with a trained model](2.RunJupyterNotebook.md)
+1. [Create a docker image to serve trained model using TensorFlow Serving](3.CreateServingDockerImage.md)
+1. [Create a Kubernetes cluster to host TensorFlow Serving](4.CreateKubernetesCluster.md)
 1. Consume that exposed model from a .NET application using gRPC protocol
 
 So let's dig deep with first step.
 
-[Setup Azure VM using Data Science template and a GPU enabled HW](./1.SetupAzureVM.md)
+[Setup Azure VM using Data Science template and a GPU enabled HW](./steps/1.SetupAzureVM.md)
 
 ![Deep Learning](images/Deep_learning.png)
