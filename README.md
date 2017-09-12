@@ -23,10 +23,10 @@ The main steps of this tutorial are:
 1. [Progressively run Jupyter notebooks to come up with a trained model](2.RunJupyterNotebook.md)
 1. [Create a docker image to serve trained model using TensorFlow Serving](3.CreateServingDockerImage.md)
 1. [Create a Kubernetes cluster to host TensorFlow Serving](4.CreateKubernetesCluster.md)
-1. Consume that exposed model from a .NET application using gRPC protocol
+1. [Consume trained model from a .NET application using gRPC protocol](5.ConsumeModelFromWebApp.md)
 
 So let's dig deep with first step.
 
-[Setup Azure VM using Data Science template and a GPU enabled HW](./steps/1.SetupAzureVM.md)
+[Setup Azure VM using Data Science template and a GPU enabled HW](./1.SetupAzureVM.md)
 
 ![Deep Learning](images/Deep_learning.png)
