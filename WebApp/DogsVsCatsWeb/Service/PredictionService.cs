@@ -78,9 +78,9 @@ namespace DogsVsCatsWeb.Service
         private void GetData(Bitmap myBitmap, TensorProto proto)
         {
             // Important : load data column by column
-            for (var i = 0; i < myBitmap.Height; i++)
+            for (var i = 0; i < myBitmap.Width; i++)
             {
-                for (var j = 0; j < myBitmap.Width; j++)
+                for (var j = 0; j < myBitmap.Height; j++)
                 {
                     Color pixelColor = myBitmap.GetPixel(j, i);
                     proto.FloatVal.Add(AdjustPixel(pixelColor.R));
