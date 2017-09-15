@@ -30,15 +30,15 @@ namespace DogsVsCatsWeb.Controllers
             {
                 return db.Predictions
                     .OrderByDescending(p => p.CreatedOn)
-                    .Take(20)
-                    .ToList()
-                    .Select(
+                     .Select(
                     p => new PredictionResult()
                     {
                         Id = p.Id,
                         DogProbability = p.DogProbability,
                         CatProbability = p.CatProbability
-                    }).ToList();
+                    })                    
+                    .Take(20)
+                   .ToList();
             }
         }
 
